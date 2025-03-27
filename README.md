@@ -64,7 +64,7 @@ SmartAuth is a full-stack web authentication system with a **FastAPI** backend a
 
 ```bash
 git clone https://github.com/nilfredb/SmartAuth.git
-cd smartauth
+cd SmartAuth
 ```
 
 ### 🚀 Run the Backend with Docker
