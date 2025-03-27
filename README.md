@@ -1,71 +1,85 @@
-# 🚀 SmartAuth – Sistema Inteligente de Autenticación con Detección de Anomalías
 
-SmartAuth es un sistema completo de autenticación web con un backend en **FastAPI** y un frontend en **React**, diseñado con enfoque profesional y moderno. Incorpora técnicas de **Machine Learning no supervisado** para detectar accesos sospechosos o inusuales en tiempo real.
+# 🚀 SmartAuth – Intelligent Authentication System with Anomaly Detection
 
----
+[![Made with FastAPI](https://img.shields.io/badge/Made%20with-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Frontend in React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Open to Work](https://img.shields.io/badge/Open%20to-Work-brightgreen?style=for-the-badge&logo=linkedin&logoColor=white)](mailto:nbaez414@gmail.com)
 
-## 🧠 Objetivo del Proyecto
 
-> Mostrar un alto nivel de dominio en Python, arquitectura de APIs modernas y análisis con IA aplicado a seguridad web, ideal como carta de presentación profesional o proyecto de portafolio técnico.
+# 🚀 SmartAuth – Intelligent Authentication System with Anomaly Detection
 
----
-
-## 📸 Vista previa
-
-> Puedes insertar capturas aquí usando Markdown:
-
-```
-![Login y Terminal](https://your-image-link/login-terminal.png)
-![Detección de Anomalías](https://your-image-link/anomalies-demo.png)
-```
+SmartAuth is a full-stack web authentication system with a **FastAPI** backend and a **React** frontend, crafted with a professional and modern approach. It includes **unsupervised machine learning techniques** to detect suspicious or unusual login activity in real-time.
 
 ---
 
-## 📂 Tecnologías utilizadas
+## 🧠 Project Goal
+
+> Showcase a high level of proficiency in Python, modern API architecture, and AI-driven security analysis — ideal as a professional portfolio piece or technical showcase.
+
+---
+
+## 📸 Preview
+
+
+
+![Login and Terminal](./resources/2.png)
+![Register and Terminal](./resources/1.png)
+![Login fail and Terminal](./resources/3.png)
+![Anomaly Detection](./resources/4.png)
+
+
+---
+
+## 📂 Technologies Used
 
 - ⚙️ Backend: **FastAPI**, **SQLAlchemy**, **Uvicorn**, **SQLite**
-- 🔐 Seguridad: Hashing con **Passlib**, Tokens JWT con **python-jose**
+- 🔐 Security: **Passlib** (hashing), **python-jose** (JWT)
 - 📊 Machine Learning: **Pandas**, **Scikit-Learn**, `IsolationForest`
 - 🎨 Frontend: **React**, **TailwindCSS**, **Framer Motion**, **Prism.js**
-- 🐳 Docker: Backend listo para despliegue
+- 🐳 Docker: Backend ready for deployment
 
 ---
 
-## ⚙️ Características clave
+## ⚙️ Key Features
 
-- [X] Registro/Login con hash y JWT
-- [X] API RESTful moderna y documentada (Swagger)
-- [X] Logging automático de accesos (IP, user-agent, timestamp)
-- [X] Análisis IA de anomalías en accesos con Isolation Forest
-- [X] Frontend atractivo y futurista con terminal de respuestas JSON en tiempo real
-- [X] Docker del backend listo para producción
+- [x] Register/Login with hashed passwords and JWT
+- [x] Modern RESTful API with Swagger docs
+- [x] Automatic access logging (IP, user-agent, timestamp)
+- [x] AI-powered anomaly detection with Isolation Forest
+- [x] Futuristic frontend with real-time JSON terminal
+- [x] Dockerized backend ready for production
 
 ---
 
-## 📦 Instalación y ejecución
+## 📦 Setup & Run Instructions
 
-### 🔧 Requisitos
+### 🔧 Requirements
 
 - Python 3.10+
-- Node.js 18+ (para frontend)
-- Docker (opcional)
+- Node.js 18+ (for frontend)
+- Docker (optional)
 
-### 💻 Clonar el proyecto
+### 💻 Clone the Repository
 
 ```bash
-git clone https://github.com/tuusuario/smartauth.git
+git clone https://github.com/youruser/smartauth.git
 cd smartauth
 ```
 
-### 🚀 Ejecutar solo backend con Docker
+### 🚀 Run the Backend with Docker
 
 ```bash
 docker compose up --build
 ```
 
-Visita: [http://localhost:8000/docs](http://localhost:8000/docs)
+Visit: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-### 🌐 Ejecutar frontend manualmente (React)
+> 🟢 **Recommended for development**: run the backend manually without Docker for better debugging and faster reloads.
+
+---
+
+### 🌐 Run the Frontend (React)
 
 ```bash
 cd frontend
@@ -73,51 +87,51 @@ npm install
 npm run dev
 ```
 
-Visita: [http://localhost:5173](http://localhost:5173)
+Visit: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🧪 Alternativas de uso
+## 🧪 Alternative Usage Modes
 
-### ▶️ Ejecutar el backend **sin Docker**
+### ▶️ Run the Backend **without Docker**
 
-Si prefieres no usar Docker, puedes iniciar el backend manualmente con Uvicorn:
+You can run the backend manually with Uvicorn (recommended for local development):
 
 ```bash
-# Crear entorno virtual (opcional)
+# Create virtual environment (optional)
 python -m venv venv
-source venv/bin/activate  # en Windows: venv\Scripts\activate
+source venv/bin/activate  # on Windows: venv\Scripts\activate
 
-# Instalar dependencias
+# Install dependencies
 pip install -r requirements.txt
 
-# Iniciar el servidor
+# Start the server
 uvicorn app.main:app --reload
 ```
 
-Accede a la API en: [http://localhost:8000/docs](http://localhost:8000/docs)
+Access the API at: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
-### ⚡ Frontend simple sin Node.js
+### ⚡ Simple Frontend without Node.js
 
-En caso de que no quieras usar Node.js o prefieras algo rápido para pruebas, puedes abrir directamente el archivo HTML básico:
+For quick testing or if you don't want to install Node.js, you can open the basic HTML frontend:
 
 ```bash
 frontend/index.html
 ```
 
-Este archivo carga un formulario de registro/login simple y consume la API directamente usando `fetch`. Ideal para pruebas rápidas sin compilar nada.
+This uses a simple form and JavaScript `fetch()` to call the API — perfect for lightweight testing.
 
 ---
 
-## 📊 Análisis IA de accesos
+## 📊 AI-based Access Log Analysis
 
-El script `analyze_logs.py` aplica técnicas de detección de anomalías a los logs de acceso:
+The `analyze_logs.py` script uses machine learning to detect unusual access patterns:
 
-- Clasifica accesos normales vs. inusuales (`anomaly: 1 / -1`)
-- Exporta resultados a `log_analysis.csv`
-- Ideal para monitoreo o integraciones de seguridad
+- Labels each access as normal or anomalous (`anomaly: 1 / -1`)
+- Exports analysis to `log_analysis.csv`
+- Great for security auditing or automation
 
 ```bash
 python app/ml/analyze_logs.py
@@ -125,7 +139,7 @@ python app/ml/analyze_logs.py
 
 ---
 
-## 🛠 Estructura del Proyecto
+## 🛠 Project Structure
 
 ```
 smartauth/
@@ -136,7 +150,7 @@ smartauth/
 │   ├── main.py
 │   └── ml/analyze_logs.py
 ├── frontend/
-│   └── React App con Tailwind y Framer Motion
+│   └── React app with Tailwind and Framer Motion
 ├── smartauth.db
 ├── Dockerfile
 ├── requirements.txt
@@ -146,18 +160,18 @@ smartauth/
 
 ---
 
-## ✨ Créditos y autoría
+## ✨ Credits & Author
 
-Este proyecto fue desarrollado por mi como ejercicio avanzado para demostrar capacidades en:
+This project was developed by me as an advanced technical exercise to showcase expertise in:
 
-- Backend con Python moderno
-- Consumo y diseño de APIs
-- Aplicación de machine learning para ciberseguridad
-- UI/UX funcional para herramientas técnicas
+- Modern backend development with Python
+- API design and consumption
+- Applied machine learning for security use cases
+- Functional and elegant UI/UX for developer tools
 
 ---
 
-## 📬 Contacto
+## 📬 Contact
 
-> Si deseas colaborar, contratar o preguntar algo técnico:
+> Interested in collaboration, hiring, or feedback?
 > [📧 Email](mailto:nbaez414@gmail.com)
