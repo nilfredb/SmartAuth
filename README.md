@@ -7,8 +7,6 @@
 [![Open to Work](https://img.shields.io/badge/Open%20to-Work-brightgreen?style=for-the-badge&logo=linkedin&logoColor=white)](mailto:nbaez414@gmail.com)
 
 
-# 🚀 SmartAuth – Intelligent Authentication System with Anomaly Detection
-
 SmartAuth is a full-stack web authentication system with a **FastAPI** backend and a **React** frontend, crafted with a professional and modern approach. It includes **unsupervised machine learning techniques** to detect suspicious or unusual login activity in real-time.
 
 ---
