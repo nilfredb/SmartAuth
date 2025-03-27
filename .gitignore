@@ -51,6 +51,3 @@ __snapshots__/
 # === Output folders ===
 *.csv
 log_analysis.csv
-
-# === Optional frontend HTML preview ===
-frontend/index.html
