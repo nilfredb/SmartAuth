@@ -1,0 +1,56 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual env
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# FastAPI log files
+*.log
+
+# === React / Node.js ===
+frontend/node_modules/
+frontend/.env
+frontend/.next/
+frontend/dist/
+frontend/build/
+
+# === General IDEs / OS ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === Docker artifacts ===
+*.pid
+*.tar
+docker-compose.override.yml
+
+# === Testing / coverage ===
+htmlcov/
+coverage.*
+.tox/
+.pytest_cache/
+__snapshots__/
+
+# === Environment ===
+.env
+.env.local
+.env.*.local
+
+# === Output folders ===
+*.csv
+log_analysis.csv
+
+# === Optional frontend HTML preview ===
+frontend/index.html
