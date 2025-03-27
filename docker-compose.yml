@@ -4,4 +4,6 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./smartauth.db:/app/smartauth.db
+      - ./app:/app/app
+    environment:
+      - PYTHONPATH=/app
