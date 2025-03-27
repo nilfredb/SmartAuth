@@ -35,7 +35,7 @@ SmartAuth is a full-stack web authentication system with a **FastAPI** backend a
 
 - ⚙️ Backend: **FastAPI**, **SQLAlchemy**, **Uvicorn**, **SQLite**
 - 🔐 Security: **Passlib** (hashing), **python-jose** (JWT)
-- 📊 Machine Learning: **Pandas**, **Scikit-Learn**, `IsolationForest`
+- 📊 Machine Learning: **Pandas**, **Scikit-Learn**, **IsolationForest**
 - 🎨 Frontend: **React**, **TailwindCSS**, **Framer Motion**, **Prism.js**
 - 🐳 Docker: Backend ready for deployment
 
@@ -63,7 +63,7 @@ SmartAuth is a full-stack web authentication system with a **FastAPI** backend a
 ### 💻 Clone the Repository
 
 ```bash
-git clone https://github.com/youruser/smartauth.git
+git clone https://github.com/nilfredb/SmartAuth.git
 cd smartauth
 ```
 
