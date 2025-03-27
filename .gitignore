@@ -1,5 +1,5 @@
 # === Python ===
-__pycache__/
+app/__pycache__/
 *.py[cod]
 *.egg
 *.egg-info/
