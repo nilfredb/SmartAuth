@@ -9,7 +9,12 @@
 
 SmartAuth is a full-stack web authentication system with a **FastAPI** backend and a **React** frontend, crafted with a professional and modern approach. It includes **unsupervised machine learning techniques** to detect suspicious or unusual login activity in real-time.
 
-🔗 **Live Demo:** [https://smartauth.nilfred.com/](https://smartauth.nilfred.com/)
+---
+
+## 🌐 Live Demo
+
+Access the live deployment of the frontend here:
+👉 [https://smartauth.nilfred.com](https://smartauth.nilfred.com)
 
 ---
 
@@ -124,6 +129,19 @@ frontend/index.html
 This uses a simple form and JavaScript `fetch()` to call the API — perfect for lightweight testing.
 
 ---
+
+## 🔒 Security Tips
+
+- ✅ The FastAPI documentation routes have been **disabled** in production for security:
+
+```python
+app = FastAPI(
+    title="SmartAuth",
+    docs_url=None,
+    redoc_url=None,
+    openapi_url=None
+)
+```
 
 ## 📊 AI-based Access Log Analysis
 
