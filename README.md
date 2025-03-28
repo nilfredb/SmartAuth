@@ -142,6 +142,14 @@ app = FastAPI(
     openapi_url=None
 )
 ```
+- This prevents access to:
+  - `/docs`
+  - `/redoc`
+  - `/openapi.json`
+
+- 🔐 Your API remains usable while preventing outsiders from inspecting available endpoints.
+
+---
 
 ## 📊 AI-based Access Log Analysis
 
