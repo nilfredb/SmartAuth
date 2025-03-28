@@ -4,7 +4,13 @@ from app.database import Base, engine
 from app import models
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="SmartAuth")
+app = FastAPI(
+    
+    title="SmartAuth",
+    #docs_url=None, # This blocks docs
+    #redoc_url=None, #This blocks redocs
+    #openapi_url=None  # This blocks json
+)
 
 app.include_router(users.router, prefix="/api/users")
 models.Base.metadata.create_all(bind=engine)
