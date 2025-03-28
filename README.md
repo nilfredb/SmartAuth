@@ -9,6 +9,8 @@
 
 SmartAuth is a full-stack web authentication system with a **FastAPI** backend and a **React** frontend, crafted with a professional and modern approach. It includes **unsupervised machine learning techniques** to detect suspicious or unusual login activity in real-time.
 
+🔗 **Live Demo:** [https://smartauth.nilfred.com/](https://smartauth.nilfred.com/)
+
 ---
 
 ## 🧠 Project Goal
